@@ -8,7 +8,7 @@ def find_subdomains(domain):
     subdomains = sublist3r.main(domain, 40, None, None, False, True, False, engines)
     
     # Menentukan path untuk menyimpan hasil
-    output_file_path = f'/sdcard/{domain}_subdomains.txt'
+    output_file_path = f'/storage/shared/{domain}_subdomains.txt'  # Menggunakan path yang benar
     
     # Menyimpan hasil ke dalam file
     with open(output_file_path, 'w') as f:
